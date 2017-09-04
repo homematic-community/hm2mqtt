@@ -1,7 +1,7 @@
 #!/bin/tclsh
 
 set checkURL    "https://raw.githubusercontent.com/owagner/hm2mqtt/master/hm2mqtt-addon/VERSION"
-set downloadURL "https://github.com/owagner/hm2mqtt/releases"
+set downloadURL "https://github.com/owagner/hm2mqtt/releases/latest"
 
 catch {
   set input $env(QUERY_STRING)
@@ -14,7 +14,7 @@ catch {
 }
 
 if { [info exists cmd ] && $cmd == "download"} {
-  puts "<meta http-equiv='refresh' content='0; url=$downloadURL' />"
+  puts "<html><head><meta http-equiv='refresh' content='0; url=$downloadURL' /></head></html>"
 } else {
   catch {
     set newversion [ exec /usr/bin/wget -qO- --no-check-certificate $checkURL ]
