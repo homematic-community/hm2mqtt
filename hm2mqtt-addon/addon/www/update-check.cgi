@@ -1,14 +1,15 @@
 #!/bin/tclsh
 
-set checkURL    "https://raw.githubusercontent.com/owagner/hm2mqtt/master/hm2mqtt-addon/VERSION"
-set downloadURL "https://github.com/owagner/hm2mqtt/releases/latest"
+set checkURL    "https://raw.githubusercontent.com/homematic-community/hm2mqtt/master/hm2mqtt-addon/VERSION"
+set downloadURL "https://github.com/homematic-community/hm2mqtt/releases/latest"
 
 catch {
   set input $env(QUERY_STRING)
   set pairs [split $input &]
   foreach pair $pairs {
-    if {0 != [regexp "^(\[^=]*)=(.*)$" $pair dummy varname val]} {
-      set $varname $val
+    if {$pair == "cmd=download"} {
+      set cmd "download"
+      break
     }
   }
 }
