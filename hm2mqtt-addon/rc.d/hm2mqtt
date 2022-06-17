@@ -22,7 +22,7 @@ start() {
 info() {
     VER=`cat /usr/local/addons/hm2mqtt/VERSION`
     echo "Info: <b>hm2mqtt CCU Addon</b><br>"
-    echo "Info: <a href="https://github.com/owagner/hm2mqtt" target="_blank">https://github.com/owagner/hm2mqtt</a>"
+    echo "Info: <a href="https://github.com/homematic-community/hm2mqtt" target="_blank">https://github.com/homematic-community/hm2mqtt</a>"
     echo "Name: hm2mqtt"
     echo "Version: $VER"
     echo "Operations: uninstall restart"

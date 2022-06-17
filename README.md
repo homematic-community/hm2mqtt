@@ -29,9 +29,8 @@ Dependencies
 It is possible to run hm2mqtt directly on a CCU2, using the Embedded JRE. Courtesy of hobbyquaker,
 a CCU2 addon wrapper is available.
 
-[![Build Status](https://travis-ci.org/owagner/hm2mqtt.png)](https://travis-ci.org/owagner/hm2mqtt)
 Automatically built jars (and the CCU2 addon) can be downloaded from the release page on GitHub at 
-https://github.com/owagner/hm2mqtt/releases
+https://github.com/homematic-community/hm2mqtt/releases
 
 
 Device names and topic structure
